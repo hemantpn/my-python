@@ -20,6 +20,6 @@ print(x.find('i',20))
 print(x.find('i',23))
 
 y= "python version is 3.7"
-print(y.find('python'))
+print(y.find('pyth'))
 print(y.find('version')) #it'll show index of first word v, 
 print(y.find('jave'))  #instead of error will show -1
