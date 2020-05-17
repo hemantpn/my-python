@@ -17,6 +17,15 @@ sp=subprocess.Popen(cmd,shell=False,stdout=subprocess.PIPE,stderr=subprocess.PIP
 rc=sp.wait()
 o,e=sp.communicate()
 
+print(o)
+print(e)
+print("-----------------------------------------")
+#if rc==0:
+# print(o)
+#else:
+# print(e)
+
+print("-----------------------------------------")
 if rc==0:
     for each_line in o.splitlines():
      if "version" in each_line and "release" in each_line:
